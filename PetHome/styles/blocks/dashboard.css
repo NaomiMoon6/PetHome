@@ -1,0 +1,486 @@
+.dashboard {
+  display: grid;
+  grid-template-areas: 
+    "contact pets"
+    "contact spots";
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 60% 40%;
+  gap: 30px;
+  
+  padding: 50px 30px 50px 0;
+  height: 75vh;
+
+  max-width: 95%;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+.dashboard__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dashboard__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dashboard__contacts {
+  grid-area: contact;
+
+  background-color: rgb(248, 234, 251);
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  color: darkslateblue;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+}
+
+.dashboard__contacts-list {
+  width: 100%;
+  max-height: 600px;
+
+  padding: 25px 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.dashboard__contacts-list-item {
+  list-style: none;
+  padding: 10px 0 10px;
+  margin: 0;
+
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid darkslateblue;
+}
+
+.dashboard__contacts-list-item-title {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.dashboard__contacts-button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+
+  background-color: darkslateblue;
+  color: rgb(248, 234, 251);
+  font-size: 17px;
+
+  border: 2px solid transparent;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dashboard__contacts-button-icon {
+  padding: 5px;
+}
+
+.dashboard__contacts-button:hover {
+  background-color: rgb(248, 234, 251);
+  border-color: darkslateblue;
+  color: darkslateblue;
+
+  .dashboard__contacts-button-icon {
+    background-color: darkslateblue;
+    border-radius: 50%;
+  }
+}
+
+.dashboard__pets {
+  grid-area: pets;
+
+  background-color: rgb(248, 234, 251);
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  color: darkslateblue;
+
+  padding: 25px;
+
+
+  box-sizing: border-box;
+}
+
+.dashboard__pets-card-list {
+  width: 100%;
+  max-height: 300px;
+
+  margin: 0;
+  padding: 25px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  overflow-x: scroll;
+}
+
+.dashboard__pets-card {
+  display: grid;
+  grid-template-areas: 
+  "image title"
+  "image subtitle"
+  "image bar"
+  "image button";
+  justify-content: space-between;
+  column-gap: 15px;
+
+  background-color: rgb(248, 234, 251);
+  padding: 25px;
+
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  color: darkslateblue;
+
+  width: 400px;
+}
+
+.dashboard__pets-card-image {
+  grid-area: image;
+  height: 150px;
+  width: 150px;
+
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.dashboard__pets-card-title-wrapper {
+  grid-area: title;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dashboard__pets-card-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.dashboard__pets-card-subtitle {
+  grid-area: subtitle;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.dashboard__pets-card-button {
+  grid-area: button;
+  
+  width: 200px;
+  height: 35px;
+  margin-top: 10px;
+
+  background-color: darkslateblue;
+  color: rgb(248, 234, 251);
+  font-size: 17px;
+
+  border: 2px solid transparent;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dashboard__pets-card-button-icon {
+  padding: 5px;
+}
+
+.dashboard__pets-card-button:hover {
+  background-color: rgb(248, 234, 251);
+  border-color: darkslateblue;
+  color: darkslateblue;
+
+  .dashboard__pets-card-button-icon {
+    background-color: darkslateblue;
+    border-radius: 50%;
+  }
+}
+
+.pet-progress {
+  grid-area: bar;
+
+  width: 100%;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+
+.pet-progress__bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 100%;
+  height: 6px;
+}
+
+.pet-progress__segment {
+  height: 100%;
+  border-radius: 50px;
+  background-color: rgb(248, 234, 251);
+  border: 1px solid darkslateblue;
+  box-sizing: border-box;
+}
+
+.pet-progress__segment--active {
+  background-color: darkslateblue;
+}
+
+.pet-progress__labels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.pet-progress__label {
+  font-size: 10px;
+  font-weight: 300;
+  color: darkslateblue;
+  opacity: 0.65;
+  line-height: 1.2;
+}
+
+.pet-progress__label--active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.dashboard__spots {
+  grid-area: spots;
+
+  background-color: rgb(248, 234, 251);
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  color: darkslateblue;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+}
+
+.dashboard__spots-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.dashboard__spots-item {
+  display: flex;
+  flex-direction: column;
+  
+  border-left: 1px solid darkslateblue;
+  padding-left: 15px;
+}
+
+.dashboard__spots-item:first-of-type {
+  border: none;
+  padding-left: 0;
+}
+
+.dashboard__spots-subitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__spots-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.dashboard__spots-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.dashboard__spots-value {
+  font-size: 75px;
+  font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .dashboard {
+    padding: 30px;
+  }
+
+  .dashboard__subtitle {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .dashboard__contacts {
+    height: 100%;
+    max-height: 650px;
+  }
+
+  .dashboard__contacts-list {
+    height: 90%;
+    max-height: 500px;
+  }
+
+  .dashboard__contacts-list-item {
+    font-size: 13px;
+  }
+
+  .dashboard__contacts-list-item-title {
+    font-size: 17px;
+  }
+
+  .dashboard__contacts-button {
+    width: 130px;
+    height: 35px;
+    margin: 5px;
+
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .dashboard__pets {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dashboard__pets-card-image {
+    max-height: 100px;
+    max-width: 100px;
+
+    border-radius: 25px;
+  }
+
+  .dashboard__pets-card-title-wrapper {
+    margin-bottom: 5px;
+  }
+
+  .dashboard__pets-card-title {
+    font-size: 20px;
+  }
+
+  .dashboard__pets-card-subtitle {
+    font-size: 15px;
+  }
+
+  .dashboard__pets-card-button {
+    height: 25px;
+    margin-top: 0;
+    font-size: 15px;
+  }
+
+  .dashboard__spots {
+    max-height: 250px;
+    width: 100%;
+  }
+
+  .dashboard__spots-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dashboard__spots-title {
+    font-size: 17px;
+  }
+
+  .dashboard__spots-value {
+    font-size: 50px;
+  }
+}
+
+@media (orientation: portrait) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard__contacts {
+    order: 1;
+
+    max-height: 400px;
+  }
+
+  .dashboard__contacts-list {
+    max-height: 300px;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 1200px) {
+  .dashboard {
+    gap: 15px;
+  }
+
+  .dashboard__contacts {
+    max-height: 300px;
+  }
+
+  .dashboard__contacts-list {
+    max-height: 200px;
+  }
+
+  .dashboard__pets {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 15px 0;
+
+    overflow: scroll;
+  }
+
+  .dashboard__subtitle {
+    display: none;
+  }
+
+  .dashboard__contacts {
+    max-height: 500px;
+  }
+
+  .dashboard__contacts-list {
+    max-height: 450px;
+  }
+
+  .dashboard__spots-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-height: 500px) {
+  .dashboard__subtitle {
+    display: none;
+  }
+
+  .dashboard__pets {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}

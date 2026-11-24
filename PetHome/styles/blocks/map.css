@@ -1,0 +1,286 @@
+.map {
+  width: 80%;
+  margin: 100px auto;
+
+  display: flex;
+  gap: 100px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.map__title {
+  font-size: 45px;
+  font-weight: 600;
+  color: darkslateblue;
+  margin-bottom: 20px;
+}
+
+.map__subtitle {
+  color: darkslateblue;
+}
+
+.map__box {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.map__placeholder {
+  margin-top: 15px;
+  max-width: 700px;
+
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+}
+
+.map__placeholder-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.map__placeholder-icon_nav {
+  background-color: darkslateblue;
+  border-radius: 50%;
+  padding: 5px;
+
+  top: 55%;
+  left: 50%;
+}
+
+.map__placeholder-icon_cat {
+  background-color: darkslateblue;
+  border-radius: 50%;
+  padding: 5px;
+
+  top: 35%;
+  left: 27%;
+}
+
+.map__placeholder-icon_dog {
+  background-color: darkslateblue;
+  border-radius: 50%;
+  padding: 5px;
+
+  top: 69%;
+  left: 87%;
+}
+
+.map__placeholder-icon_animal {
+  background-color: darkslateblue;
+  border-radius: 50%;
+  padding: 5px;
+
+  top: 89%;
+  left: 36%;
+}
+
+.map__list {
+  width: 100%;
+  max-height: 630px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  overflow-y: scroll;
+}
+
+.map__item {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-between;
+  background-color: rgb(248, 234, 251);
+  padding: 25px;
+
+  border: 2px solid darkslateblue;
+  border-radius: 50px;
+  color: darkslateblue;
+}
+
+.map__item-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.map__item-value {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.map__button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+
+  background-color: darkslateblue;
+  color: rgb(248, 234, 251);
+  font-size: 17px;
+
+  border: 2px solid transparent;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.map__button-icon {
+  padding: 5px;
+}
+
+.map__button:hover {
+  background-color: rgb(248, 234, 251);
+  border-color: darkslateblue;
+  color: darkslateblue;
+
+  .map__button-icon {
+    background-color: darkslateblue;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .map {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .map {
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .map__placeholder {
+    max-width: 600px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .map {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  .map__placeholder {
+    max-width: 500px;
+    max-height: 350px;
+  }
+
+  .map__title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .map__list {
+    max-height: 500px;
+    gap: 15px;
+  }
+
+  .map__item {
+    padding: 15px 15px 15px 30px;
+  }
+
+  .map__item-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .map__item-value {
+    margin-top: 15px;
+  }
+}
+
+@media (orientation: portrait) {
+  .map {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map__placeholder {
+    max-width: 900px;
+    max-height: 600px;
+  }
+
+  .map__list {
+    max-width: 800px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 850px) {
+  .map__placeholder {
+    max-width: 650px;
+    max-height: 500px;
+  }
+
+  .map__list {
+    max-width: 600px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 700px) {
+  .map__placeholder {
+    max-width: 550px;
+    max-height: 400px;
+  }
+
+  .map__list {
+    max-width: 500px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 550px) {
+  .map__placeholder {
+    max-width: 390px;
+    max-height: 290px;
+  }
+
+  .map__list {
+    max-width: 380px;
+    max-height: 280px;
+  }
+
+  .map__item {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  .map{
+    margin: 10px auto;
+  }
+
+  .map__placeholder {
+    max-width: 350px;
+    max-height: 280px;
+  }
+
+  .map__title {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .map__subtitle{
+    display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  .map__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .map__subtitle{
+    display: none;
+  }
+
+  .map__placeholder {
+    margin: 0;
+    max-width: 400px;
+    max-height: 230px;
+  }
+}

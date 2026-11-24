@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Pet Home</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/icons/logo.svg"/>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__logo-title">
+          <img class="header__logo" src="./assets/icons/logo.svg">
+          <h1 class="header__title">
+            Pet Home
+          </h1>
+          <h2 class="header__subtitle">
+            | Status dos Pets
+          </h2>
+        </div>
+
+        <nav class="header__nav">
+          <a href="dashboard.html" class="header__nav-button">
+            Dashboard
+          </a>
+
+          <a href="pets.html" class="header__nav-button">
+            Pets
+          </a>
+
+          <a href="contatos.html" class="header__nav-button">
+            Contatos
+          </a>
+        </nav>
+
+        <div class="header__profile">
+          <img class="header__profile-icon" src="./assets/icons/profile-icon.svg"> 
+
+          <h2>Meu Abrigo</h2>
+
+          <a href="#" class="header__nav-button">
+            Editar
+          </a>
+          <a href="index.html" class="header__nav-button">
+            Sair
+          </a>
+        </div>
+      </header>
+
+      <main class="pets__page">
+        <section class="pets">
+          <h2 class="dashboard__title">Pets</h2>
+          <p class="dashboard__subtitle">Status dos pets em cuidados e disponíveis para adoção.</p>
+
+          <ul class="pets__card-list">
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat1.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Luna</h2>
+                <img class="pets__card-icon" src="./assets/icons/female-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat2.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Simba</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/dog1.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Thor</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat3.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Mia</h2>
+                <img class="pets__card-icon" src="./assets/icons/female-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle">Em Tratamento </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label pet-progress__label--active">Tratamento</span>
+                  <span class="pet-progress__label">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/dog2.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Max</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat4.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Oliver</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/dog3.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Mel</h2>
+                <img class="pets__card-icon" src="./assets/icons/female-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/dog4.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Cookie</h2>
+                <img class="pets__card-icon" src="./assets/icons/female-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Vacina Pendente </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label pet-progress__label--active">Tratamento</span>
+                  <span class="pet-progress__label">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat5.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Theo</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+
+            <li class="pets__card">
+              <img class="pets__card-image" src="./assets/images/cat6.jpg">
+
+              <div class="pets__card-title-wrapper">
+                <h2 class="pets__card-title">Gabriel</h2>
+                <img class="pets__card-icon" src="./assets/icons/male-icon.svg">
+              </div>
+
+              <h3 class="pets__card-subtitle"> Disponível </h3>
+
+              <div class="pet-progress" data-stage="disponivel">
+                <div class="pet-progress__bar">
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment pet-progress__segment--active"></span>
+                  <span class="pet-progress__segment"></span>
+                </div>
+                <div class="pet-progress__labels">
+                  <span class="pet-progress__label">Tratamento</span>
+                  <span class="pet-progress__label pet-progress__label--active">Disponível</span>
+                  <span class="pet-progress__label">Adotado</span>
+                </div>
+              </div>
+
+              <button class="pets__card-button">
+                <img class="pets__card-button-icon" src="./assets/icons/search-icon.svg">
+                Ver Status
+              </button>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__paragraph">
+          Centro Universitário São Lourenço
+        </p>
+
+        <p class="footer__paragraph">
+          Naomi Marra Marcondes
+        </p>
+
+        <p class="footer__paragraph">
+          2026
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

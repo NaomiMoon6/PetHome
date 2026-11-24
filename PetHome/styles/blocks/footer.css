@@ -1,0 +1,32 @@
+.footer {
+  background-color: darkslateblue;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 50px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__paragraph {
+  width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    font-size: 9;
+  }
+
+  .footer__paragraph {
+    width: 130px;
+  }
+}

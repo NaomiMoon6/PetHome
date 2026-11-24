@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Pet Home</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/icons/logo.svg"/>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__logo-title">
+          <img class="header__logo" src="./assets/icons/logo.svg">
+          <h1 class="header__title">
+            Pet Home
+          </h1>
+
+          <h2 class="header__subtitle">
+            | Acessar seu Abrigo
+          </h2>
+        </div>
+
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-button">
+            Início
+          </a>
+
+          <a href="adotar.html" class="header__nav-button">
+            Adotar
+          </a>
+
+          <a href="abrigos.html" class="header__nav-button">
+            Abrigos
+          </a>
+
+          <a href="cadastro.html" class="header__nav-button header__nav-button_highlight">
+            Cadastrar
+          </a>
+
+          <a href="login.html" class="header__nav-button header__nav-button_highlight">
+            Login
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="login-form__container">
+          <form class="login-form" action="#" method="post" enctype="multipart/form-data">  
+            <h2 class="login-form__title">Acessar seu Abrigo</h2>
+          
+            <label for="nome-abrigo" class="login-form__input-label">Email</label>
+            <input type="text" id="email" name="email" class="login-form__input"/> <!-- required -->
+
+            <label for="nome-abrigo" class="login-form__input-label">Senha</label>
+            <input type="password" id="senha" name="senha" class="login-form__input"/> <!-- required -->
+          
+            <!--button type="submit" class="login-form__submit">Entrar</button-->
+            <a href="dashboard.html"class="login-form__submit">Entrar</a>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__paragraph">
+          Centro Universitário São Lourenço
+        </p>
+
+        <p class="footer__paragraph">
+          Naomi Marra Marcondes
+        </p>
+
+        <p class="footer__paragraph">
+          2026
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

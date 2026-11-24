@@ -1,0 +1,18 @@
+/* BASE */
+@import url(./base/reset.css);
+@import url(./base/fonts.css);
+@import url(./base/page.css);
+@import url(./blocks/header.css);
+@import url(./blocks/footer.css);
+
+/* PUBLIC */
+@import url(./blocks/landing.css);
+@import url(./blocks/map.css);
+@import url(./blocks/card-grid.css);
+@import url(./blocks/form.css);
+@import url(./blocks/login-form.css);
+
+/* ADMIN */
+@import url(./blocks/dashboard.css);
+@import url(./blocks/pets.css);
+@import url(./blocks/contacts.css);

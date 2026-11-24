@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Pet Home</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/icons/logo.svg"/>
+  </head>
+  <body class="form__page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__logo-title">
+          <img class="header__logo" src="./assets/icons/logo.svg">
+          <h1 class="header__title">
+            Pet Home
+          </h1>
+
+          <h2 class="header__subtitle">
+            | Cadastrar seu Abrigo
+          </h2>
+        </div>
+
+        <nav class="header__nav">
+          <a href="index.html" class="header__nav-button">
+            Início
+          </a>
+
+          <a href="adotar.html" class="header__nav-button">
+            Adotar
+          </a>
+
+          <a href="abrigos.html" class="header__nav-button">
+            Abrigos
+          </a>
+
+          <a href="cadastro.html" class="header__nav-button header__nav-button_highlight">
+            Cadastrar
+          </a>
+
+          <a href="login.html" class="header__nav-button header__nav-button_highlight">
+            Login
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="form-container">
+          <form class="form" action="#" method="post" enctype="multipart/form-data">  
+            <div class="form__column">    
+              <div class="form__message">
+                <h2 class="form__message-title">
+                  Importante
+                </h2>
+
+                <p>
+                  Seu cadastro será analisado por um membro da equipe em até 3 dias uteis, verificaremos se a procedência do abrigo está de acordo
+                  com as necessidades dos animais, se necessário entraremos em contato e pediremos mais informações e agendaremos uma visita.
+                  Após análise enviaremos os dados de acesso mediante a aprovação. Agradecemos a compreensão.
+                </p>
+              </div>
+
+              <label for="nome-abrigo" class="form__input-label">Nome do abrigo</label>
+              <input type="text" id="nome-abrigo" name="nome_abrigo" class="form__input" required />
+
+              <label for="nome-responsavel" class="form__input-label">Nome do responsável</label>
+              <input type="text" id="nome-responsavel" name="nome_responsavel" class="form__input" required />
+
+              <label for="email-contato" class="form__input-label">E-mail de contato</label>
+              <input type="email" id="email-contato" name="email_contato" class="form__input" required />
+
+              <label for="telefone-contato" class="form__input-label">Telefone de contato</label>
+              <input type="tel" id="telefone-contato" name="telefone_contato" class="form__input" required />
+
+              <label for="tipos-animais" class="form__input-label">Aceita quais tipos de animais?</label>
+              <select id="tipos-animais" name="tipos_animais" class="form__select" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="gatos">Gatos</option>
+                <option value="cachorros">Cachorros</option>
+                <option value="outros">Outros, especificar</option>
+              </select>
+            </div>
+
+            <div class="form__column form__column_right">  
+              <label for="mais-informacoes" class="form__input-label">Mais informações (opcional)</label>
+              <textarea id="mais-informacoes" name="mais_informacoes" class="form__textarea" rows="4"></textarea>
+
+              <label class="form__input-label" for="file-upload">Adicionar Imagens (Opicional)</label>
+              <label class="form__file-label" for="file-upload">
+                <span class="form__file-text" id="file-name">Choose a file...</span>
+                <span class="form__file-button">Browse</span>
+              </label>
+              <input
+                type="file"
+                id="imagens"
+                name="imagens"
+                class="form__file-input"
+                accept="image/*"
+                multiple
+              />
+              
+              <label for="rua" class="form__input-label">Endereço</label>
+              <input type="text" id="rua" name="rua" class="form__input" required />
+
+              <label for="bairro" class="form__input-label">Bairro</label>
+              <input type="text" id="bairro" name="bairro" class="form__input" required />
+
+              <label for="cidade" class="form__input-label">Cidade</label>
+              <input type="text" id="cidade" name="cidade" class="form__input" required />
+
+              <label for="estado" class="form__input-label">Estado</label>
+              <input type="text" id="estado" name="estado" class="form__input" required />
+
+              <button type="submit" class="form__submit">Cadastrar abrigo</button>              
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__paragraph">
+          Centro Universitário São Lourenço
+        </p>
+
+        <p class="footer__paragraph">
+          Naomi Marra Marcondes
+        </p>
+
+        <p class="footer__paragraph">
+          2026
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
