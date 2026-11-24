@@ -223,7 +223,7 @@
   }
 
   .contacts__chatbox {
-    max-height: 65vh;
+    max-height: 60vh;
   }
 }
 
@@ -233,6 +233,6 @@
   }
 
   .contacts__chatbox {
-    max-height: 60vh;
+    max-height: 55vh;
   }
 }

@@ -246,6 +246,10 @@
   .map__item {
     grid-template-columns: 50% 50%;
   }
+
+  .map__item:nth-last-child(1 of .map__item) {
+    margin-bottom: 100px;
+  }
 }
 
 @media (orientation: portrait) and (max-width: 400px) {

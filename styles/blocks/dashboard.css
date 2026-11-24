@@ -451,7 +451,7 @@
 @media (max-width: 500px) {
   .dashboard {
     padding: 15px 0;
-
+    padding-bottom: 80px;
     overflow: scroll;
   }
 

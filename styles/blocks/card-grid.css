@@ -118,4 +118,8 @@
   .card {
     width: 250px;
   }
+
+  .card:nth-last-child(1 of .card) {
+    margin-bottom: 300px;
+  }
 }
