@@ -1,11 +1,10 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden;      /* viewport nunca rola */
+  overflow: hidden;
 }
 
 .page {
-  /* mantém o que você já tinha (fonte, cor), pode tirar height/overflow daqui */
   font-family: "Poppins";
   background-color: rgb(207, 193, 219);
   box-sizing: border-box;
@@ -14,7 +13,7 @@ html, body {
 .page__content {
   position: relative;
   height: 100vh;
-  height: 100dvh;        /* corrige a barra de endereço do mobile */
-  overflow: hidden;      /* usuário não rola... */
-  scroll-behavior: smooth; /* ...mas o botão rola com animação */
+  height: 100dvh;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }

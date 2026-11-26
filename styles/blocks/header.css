@@ -110,7 +110,7 @@
 
   .header__nav-button {
     height: 20px;
-    padding: 7px;
+    padding: 5px;
   }
 }
 
@@ -118,11 +118,17 @@
   .header {
     flex-direction: column;
     padding-bottom: 10px;
+    gap: 5px;
   }
 
   .header__nav {
     order: 1;
     margin-top: 10px;
+  }
+
+  .header__nav-button {
+    height: 20px;
+    padding: 5px;
   }
 }
 
@@ -135,5 +141,11 @@
   .header__nav {
     order: 1;
     margin-top: 10px;
+    gap: 5px;
+  }
+
+  .header__nav-button {
+    height: 20px;
+    padding: 5px;
   }
 }
